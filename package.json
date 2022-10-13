@@ -46,7 +46,7 @@
         "typings": "typings"
     },
     "dependencies": {
-        "chalk": "^4.1.2",
+        "chalk": "^5.1.2",
         "i18n": "^0.15.0",
         "inquirer": "^8.2.4",
         "js-cool": "^2.4.0",
