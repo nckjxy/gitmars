@@ -448,8 +448,8 @@ importers:
         specifier: ^0.0.1
         version: 0.0.1
       lowdb:
-        specifier: ^1.0.0
-        version: 1.0.0
+        specifier: ^6.1.1
+        version: 6.1.1
       node-pty:
         specifier: ^1.0.0
         version: 1.0.0
@@ -8454,6 +8454,7 @@ packages:
   /iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
     engines: {node: '>=0.10.0'}
+    requiresBuild: true
     dependencies:
       safer-buffer: 2.1.2
     dev: true
@@ -8867,10 +8868,6 @@ packages:
     resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
     engines: {node: '>=0.10.0'}
     dev: true
-
-  /is-promise@2.2.2:
-    resolution: {integrity: sha512-+lP4/6lKUBfQjZ2pdxThZvLUAafmZb8OAxFb8XXtiQmS35INgr85hdOGoEs124ez1FCnZJt6jau/T+alh58QFQ==}
-    dev: false
 
   /is-reference@1.2.1:
     resolution: {integrity: sha512-U82MsXXiFIrjCK4otLT+o2NA2Cd2g5MLoOVXUZjIOhLurrRxpEXzI8O0KZHr3IjLvlAH1kTPYSuqer5T9ZVBKQ==}
@@ -9515,15 +9512,11 @@ packages:
     engines: {node: '>=0.1.90'}
     dev: false
 
-  /lowdb@1.0.0:
-    resolution: {integrity: sha512-2+x8esE/Wb9SQ1F9IHaYWfsC9FIecLOPrK4g17FGEayjUWH172H6nwicRovGvSE2CPZouc2MCIqCI7h9d+GftQ==}
-    engines: {node: '>=4'}
+  /lowdb@6.1.1:
+    resolution: {integrity: sha512-HO13FCxI8SCwfj2JRXOKgXggxnmfSc+l0aJsZ5I34X3pwzG/DPBSKyKu3Zkgg/pNmx854SVgE2la0oUeh6wzNw==}
+    engines: {node: '>=16'}
     dependencies:
-      graceful-fs: 4.2.11
-      is-promise: 2.2.2
-      lodash: 4.17.21
-      pify: 3.0.0
-      steno: 0.4.4
+      steno: 3.1.1
     dev: false
 
   /lru-cache@5.1.1:
@@ -11016,10 +11009,12 @@ packages:
   /pify@3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
+    dev: true
 
   /pify@4.0.1:
     resolution: {integrity: sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==}
     engines: {node: '>=6'}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -11278,6 +11273,7 @@ packages:
 
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -12418,10 +12414,9 @@ packages:
       bl: 5.1.0
     dev: true
 
-  /steno@0.4.4:
-    resolution: {integrity: sha512-EEHMVYHNXFHfGtgjNITnka0aHhiAlo93F7z2/Pwd+g0teG9CnM3JIINM7hVVB5/rhw9voufD7Wukwgtw2uqh6w==}
-    dependencies:
-      graceful-fs: 4.2.11
+  /steno@3.1.1:
+    resolution: {integrity: sha512-B7c6EVH7oEiaMRW36SjUnktkDwp/qd4pQiduylyiqvcZEZDeX0IIFZRBZdwO/RaVo60M0wkDwC0e8yeKaR4VGg==}
+    engines: {node: '>=16'}
     dev: false
 
   /stream-combiner@0.0.4:
